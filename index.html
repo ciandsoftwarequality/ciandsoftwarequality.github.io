@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SCAM 2022</title>
+    <title>SBES 2023</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">SCAM 2022</a>
+                <a class="navbar-brand" href="#page-top">SBES 2023</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,7 +73,7 @@
                     <br>
                     <br>                    
                     <div class="intro-text">
-                        <h1>Revisiting the Relationship between Continuous Integration and Software Quality: An Empirical Study</h1>
+                        <h1>Analyzing the Impact of CI Sub-practices on Continuous Code Quality in Open-Source Projects: An Empirical Study</h1>
                         <hr class="star-light">
                     </div>
                 </div>                
@@ -100,18 +100,16 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-justify">                    
                     <p>
-                    In this work, we use data from <b><a href="#studied-projects-rq1" class="portfolio-link" data-toggle="modal">75 GitHub projects</a></b> to analyze whetherprojects improve their quality inspection outcomes after CI adoption. Furthermore, we use data from other <b><a href="#studied-projects-rq2" class="portfolio-link" data-toggle="modal">184 GitHub projects</a></b> 
-                    to analyze whether the degree of the adoption of certain CI practices improves the Quality Inspection outocmes of the projects. Finally, we use a subset of <b><a href="#studied-projects-rq3" class="portfolio-link" data-toggle="modal">96 Java projects</a></b> from the aforementioned 184 projects, to analyze whether
-                    the degree of adoption of proper CI practices shares a strong association with improved Object-Oriented Quality outcomes.                   
+                    In this work, we conduct an exploratory study investigating how the adoption of a CI service (i.e., Travis CI) impacts on the Continuous Code Quality inspection outcomes of <b><a href="#studied-projects-rq1" class="portfolio-link" data-toggle="modal">75 relevant open-source projects</a></b> hosted on GitHub for a period of 2 years. We further complemented our analysis by investigating to what extent four CI sub-practices, including avoiding long-running builds, fixing broken builds quickly, controlling for acceptable test coverage, and integrating at least daily, impacts on the CCQ outcomes of  <b><a href="#studied-projects-rq2" class="portfolio-link" data-toggle="modal">184 open-source projects</a></b> from GitHub.                    
                     <br><br>
                     In particular, we address the following research questions:
                     <br><br>
                     </p>
                     <p style="padding-left:40px;padding-right:40px;">
-                    <b>RQ1: Does the adoption of CI share a relationship with improved quality inspection outcomes?                        
+                    <b>RQ1. What is the impact of adopting a CI service on the projects' quality inspection outcomes?
                     </b>                                       
                     
-                    Surprisingly, our statistical analyses reveal that adopting Travis CI has little to no association to improved Quality Inspection outcomes.
+                    Surprisingly, our statistical analyses indicate that the adoption of Travis CI shows no significant association with improved CCQ inspection outcomes. This finding emphasizes that the mere adoption of a CI service does not guarantee automatic improvements in quality outcomes for open-source projects. Further investigations are needed to explore the underlying factors that influence the relationship between CI adoption and quality outcomes.
                     
                     </p>
                     <p class="text-center">
@@ -122,25 +120,15 @@
                     
                     <br><br>
                     <p class="text-justify" style="padding-left:40px;padding-right:40px;">
-                    <b>RQ2: Does the degree of CI adoption share a relationship with improved quality inspection outcomes?                  </b>                     
-                    By analyzing four CI practices---avoiding long-running builds, fixing broken builds as soon as possible; controlling for acceptable test coverage, and integrating at least daily---our results reveal that only controlling for acceptable test coverage and avoiding long-running builds have a strong association with improved quality inspection outcomes.                    
+                    <b>RQ2. To what extent the adoption of CI sub-practices share a relationship with improved quality inspection outcomes?b>                     
+                    By analyzing four CI sub-practices, including avoiding long-running builds, fixing broken builds quickly, controlling for acceptable test coverage, and integrating at least daily, our results indicate that only controlling for test coverage and avoiding long-running builds have a significant association with improved quality inspection outcomes. 
+                    These findings underscore the importance of prioritizing test coverage and minimizing build duration as key factors in enhancing software quality throughout the development process. 
                     </p>
                     <p class="text-center">
                         <a href="#rq2-violin-plots" class="btn btn-success portfolio-link" data-toggle="modal">
                             <i class="fa fa-search-plus fa-1x"></i> <b>See the Violin plots for the comparisons performed in RQ2</b>
                         </a>
-                    </p>
-
-                    <br><br>
-                    <p class="text-justify" style="padding-left:40px;padding-right:40px;">
-                    <b>RQ3: Does the degree of CI adoption share a relationship with improved OO quality outcomes?</b>                    
-                    Our results reveal that the practice of integrating at least daily has little to no association with improved OO quality outcomes. Surprisingly, we observe that better OO quality outcomes are strongly associated with longer build durations and lower test coverage. However, better OO quality outcomes are also strongly associated with quicker build fixes. 
-                    </p>
-                    <p class="text-center">
-                        <a href="#rq3-violin-plots" class="btn btn-success portfolio-link" data-toggle="modal">
-                            <i class="fa fa-search-plus fa-1x"></i> <b>See the Violin plots for the comparisons performed in RQ3</b>
-                        </a>
-                    </p>                                  
+                    </p>                                 
                 </div>                                                
             </div>
         </div>
@@ -178,15 +166,6 @@
                         <i class="glyphicon glyphicon-download"></i> <b>Dataset used in RQ2</b>
                     </a>
                 </div>
-
-                <br>
-                <br>
-
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="data_2/RQ3/datasets/analized_dataset_RQ3.csv" class="btn btn-success">
-                        <i class="glyphicon glyphicon-download"></i> <b>Dataset used in RQ3</b>
-                    </a>
-                </div>
             <!-- </div> -->
         </div>
     </section>    
@@ -197,7 +176,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-12">
-                        <h4>SCAM 2022</h4>
+                        <h4>SBES 2023</h4>
                     </div>                    
                 </div>
             </div>
