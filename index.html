@@ -184,24 +184,74 @@
                 <div class="col-lg-8 col-lg-offset-2">
 
                 <p>
-                    In the dataset of RQ1, for each project, we provide metrics for a total of 144 versions.
+                    In the dataset of RQ1, we provide the values of the metrics bugs, 
+                    code smells, duplicated lines, and technical debts for a total of 
+                    144 versions of <b><a href="#studied-projects-rq1" class="portfolio-link" data-toggle="modal">75 relevant open-source projects</a></b>.
                     <br>
-                    <ul>
-                        <li>
-                            The first 48 versions represent the versions before the adoption of Travis CI.
-                        </li>
-                        <li>
-                            The next 48 versions (from 49 to 96) represent the versions of the first year after the adoption of Travis CI ("early CI").
-                        </li>
-                        <li>
-                            The last 48 versions (from 97 to 144) represent the versions of the third year after the adoption of Travis CI ("late CI").
-                        </li>
-                    </ul>
+                    <br>
+                    The metrics were collected from the SonarQube platform, which is a  widely used platform for continuous inspection of code quality.
+                    <br>
+                    <br>    
+                    
+                    <b>*</b> The first 48 versions represent the versions before the adoption of Travis CI.
+                    <br>
+                    <b>*</b> The next 48 versions (from 49 to 96) represent the versions of the first year after the adoption of Travis CI ("early CI").
+                    <br>
+                    <b>*</b> The last 48 versions (from 97 to 144) represent the versions of the third year after the adoption of Travis CI ("late CI").
+                    <br>
+
+                    <br>
+                    The table below detail the meta-data that we fetch for all 144 versions of the 75 projects investigated in RQ1.
+                    <br>
+                    <br>
+
+                <table class="table table-striped table-condensed no-footer">
+                    <tr>
+                        <td>#</td>
+                        <td>Variable</td>
+                        <td>Definition</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Version</td>
+                        <td>The software version number for which the metric was calculated.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Metric</td>
+                        <td>The specific metric calculated for the software version. This dataset presents data for five metrics (bugs, code_smells, duplicated_lines,  code_smells, sqale_debt_ratio, and nloc).</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Date</td>
+                        <td>The date when the metric was collected in SonarQube.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Value</td>
+                        <td>The value of the metric for the specific software version.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>normalized_value</td>
+                        <td>The value of the metric normalized by the nloc.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>project_name</td>
+                        <td>The name of the project for which the metric was calculated.</td>
+                    </tr>
+                </table>                
                 </p>
 
+                <p>
+                Use the link below to download the dataset and their respective meta-data in a format of a CSV document.
+
+                </p>
+                
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="data_2/RQ1/datasets/analized_dataset_RQ1.csv" class="btn btn-success">
-                        <i class="glyphicon glyphicon-download"></i> <b>Dataset used in RQ1</b>
+                        <i class="glyphicon glyphicon-download"></i> <b>DATASET USED IN RQ1</b>
                     </a>
                 </div>
 
@@ -210,7 +260,7 @@
 
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="data_2/RQ2/datasets/analized_dataset_RQ2.csv" class="btn btn-success">
-                        <i class="glyphicon glyphicon-download"></i> <b>Dataset used in RQ2</b>
+                        <i class="glyphicon glyphicon-download"></i> <b>DATASET USED IN RQ2</b>
                     </a>
                 </div>
             <!-- </div> -->
