@@ -207,9 +207,9 @@
 
                 <table class="table table-striped table-condensed no-footer">
                     <tr>
-                        <td>#</td>
-                        <td>Variable</td>
-                        <td>Definition</td>
+                        <td><b>#</b></td>
+                        <td><b>Variable</b></td>
+                        <td><b>Description</b></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -267,7 +267,7 @@
                 sub-practices, including Build Duration (sec.), 
                 Time to Fix broken builds, Test Coverage (%), and CI build activity for each project. 
                 Additionally, the dataset encompasses metrics associated with continuous code quality, 
-                encompassing bugs, code smells, duplicated lines, and technical debt for these projects.
+                such as bugs, code smells, duplicated lines, and technical debt for these projects.
 
                 <br><br>
 
@@ -277,9 +277,120 @@
                 and technical debt metrics were collected from the SonarQube API.
                 
                 <br>
+                    The table below detail the meta-data that we fetch for the projects investigated in RQ2.
+                    <br>
+                    <br>
+
+                <table class="table table-striped table-condensed no-footer">
+                    <tr>
+                        <th><b>#</b></th>
+                        <td><b>Variable</b></td>
+                        <td><b>Description</b></td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>project</td>
+                        <td>The name of the project for which the metrics were calculated.</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>sonar_start_date</td>
+                        <td>The date of the first build on SonarCloud.</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>sonar_end_date</td>
+                        <td>The date of the last build on SonarCloud.</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>sonar_duration</td>
+                        <td>The difference in days between sonar_start_date and sonar_end_date.</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>ccq_builds_in_sonar_period</td>
+                        <td>The number of available builds in SonarCloud in the period between sonar_start_date and sonar_end_date.</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>median_ncloc</td>
+                        <td>The median ncloc (number of lines of code) in the analyzed SonarCloud builds of the project.</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>median_bugs</td>
+                        <td>The median number of bugs in the analyzed SonarCloud builds of the project.</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>median_code_smells</td>
+                        <td>The median number of code smells in the analyzed SonarCloud builds of the project.</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>median_sqale_index</td>
+                        <td>The median number of technical debts in the analyzed SonarCloud builds of the project.</td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>median_bugs_density</td>
+                        <td>The median_bugs divided by median_ncloc.</td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>median_code_smells_density</td>
+                        <td>The median_code_smells divided by the median_ncloc.</td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>median_sqale_ratio</td>
+                        <td>The median_sqale_index divided by median_ncloc.</td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>median_duplicated_lines_density</td>
+                        <td>The median number of duplicated lines in the analyzed SonarCloud builds of the project divided by median_ncloc.</td>
+                    </tr>
+                    <tr>
+                        <th>14</th>
+                        <td>median_coverage</td>
+                        <td>The median coverage in the analyzed SonarCloud builds of the project.</td>
+                    </tr>
+                    <tr>
+                        <th>15</th>
+                        <td>median_ci_duration</td>
+                        <td>The median build duration of the analyzed Travis CI builds of the project.</td>
+                    </tr>
+                    <tr>
+                        <th>16</th>
+                        <td>median_ci_time_to_fix</td>
+                        <td>The median time to fix broken builds of the analyzed Travis CI builds of the project.</td>
+                    </tr>
+                    <tr>
+                        <th>17</th>
+                        <td>ci_build_activity</td>
+                        <td>The percentage of days that had at least one build on Travis CI in the period that sonar clould was active. (ci_builds_total_activity_days/sonar_duration)</td>
+                    </tr>
+                    <tr>
+                        <th>18</th>
+                        <td>ci_builds_in_sonar_period</td>
+                        <td>The number of builds in Travis CI in the period between sonar_start_date and sonar_end_date.</td>
+                    </tr>
+                    <tr>
+                        <th>19</th>
+                        <td>ci_builds_total_activity_days</td>
+                        <td>The number of days that had at least one Travis CI build in the period in which SonarCloud was active.</td>
+                    </tr>
+                    <tr>
+                        <th>20</th>
+                        <td>ccq_ratio_updated</td>
+                        <td>The number of builds checked on SonarCloud divided by the number of Travis CI Builds in the period in which SonarCloud was active. (ccq_builds_in_sonar_period/ci_builds_in_sonar_period)</td>
+                    </tr>
+                </table>
 
                 <p>
-                    To access and download the dataset, including their corresponding meta-data, in CSV format, please follow the link provided below:
+                    To access and download the dataset, including their corresponding meta-data, in CSV format, please follow the link provided below.
                 </p>                    
 
                 <div class="col-lg-8 col-lg-offset-2 text-center">
